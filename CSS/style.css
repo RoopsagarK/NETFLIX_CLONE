@@ -1,0 +1,134 @@
+:root{
+    --primary-color: #e50914;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica ,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+    color: #999;
+}
+h1,h2,h3,h4{
+    color: white;
+}
+.text h1{
+    font-weight: 1000;
+    font-size: larger;
+}
+.text #secondtext{
+    padding-bottom: 25px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.showcase{
+    width: 100%;
+    height: 93vh;
+    background-image: url("../img/backgroundimage.jpg");
+    background: cover;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 400px 100px 250px #070c27;
+    opacity: 0.9;
+}
+.showcase .showcase-top{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.details{
+    margin-left: 8rem;
+    position: relative;
+    z-index: 2;
+}
+.showcase .text{
+    margin-top: 8rem;
+    margin-left: 8rem;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.showcase-top img{
+    margin-left: 3rem;
+    margin-top: 20px;
+    width: 10rem;
+}
+.showcase-top .signin{
+    float: right;
+    margin-top: 20px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 0.8rem;
+    margin-right: 1.2rem;
+    margin-left: 0.8rem;
+    font-weight: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+.signin:hover{
+    opacity: 0.9;
+}
+.getstarted:hover{
+    opacity: 0.9;
+}
+.showcase-top .langSelect{
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem 0.8rem;
+    width: 7.8rem;
+    font-weight: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color:  rgba(0, 0, 0, 0.3);
+}
+.langSelect:hover{
+    opacity: 0.9;
+}
+.text h1{
+    font-size: 3.5rem;
+    font-weight: 50px;
+    z-index: 2;
+}
+.emailbar{
+    padding: 12px 16px;
+    text-align: left;
+    margin-right: 5px;
+    width: 23rem;
+    height: 3.3rem;
+    background-color:  rgba(30, 30, 31, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    border: white;
+    border-color: white;
+}
+.getstarted{
+    height: 3.3rem;
+    width: 10rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+}
+    
+
+
+
