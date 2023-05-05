@@ -183,3 +183,86 @@ h1,h2,h3,h4{
     height: 8px;
     background-color: rgba(0, 0, 0, 0.6);
 }
+.questions{
+    width: 80rem;
+    height: 40rem;
+    margin-left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.questions h2{
+    position: relative;
+    z-index: 3;
+    font-size: 38px;
+    font-weight: 900;
+}
+.accordian{
+    margin: 60px ;
+    width: 100%;
+    position: relative;
+    box-decoration-break: none;
+    max-width: 750px;
+    z-index: 3;
+}
+.accordian li{
+    list-style: none;
+    width: 100%;
+    z-index: 3 ;
+}
+.accordian li label{
+    display: flex;
+    align-items: center;
+    height: 85px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background:#070c27;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background:#070c27;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    transition: max-height 0.5s,padding 0.5s;
+    z-index: 3;
+}
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.finaltext{
+    position: relative;
+    z-index: 3;
+}
+.details2 .emailbar2{
+        padding: 12px 16px;
+        text-align: left;
+        margin-right: 5px;
+        width: 23rem;
+        height: 3.3rem;
+        background-color:  rgba(30, 30, 31, 0.8);
+        color: white;
+        border-radius: 4px;
+        font-weight: 300;
+        font-size: 1.2rem;
+        border: white;
+        border-color: white;
+}
