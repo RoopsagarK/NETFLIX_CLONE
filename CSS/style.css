@@ -2,13 +2,16 @@
     --primary-color: #e50914;
 }
 *{
-    box-sizing: border-box;
+    box-sizing: border-box;    
+}
+html{
+    height: 100%;
 }
 body{
     font-family: Helvetica ,sans-serif;
-    -webkit-font-smoothing: antialiased;
+    height: 100%;
     position: relative;
-    background-color: black;
+    background-color: #00071f;
     color: #999;
 }
 h1,h2,h3,h4{
@@ -265,4 +268,13 @@ input[type="radio"]{
         font-size: 1.2rem;
         border: white;
         border-color: white;
+}
+@media (max-width:576px) {
+    .en,.showcase,.img1,.img2,.img3,.img4{
+        padding: 0px;
+        margin: 0px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
