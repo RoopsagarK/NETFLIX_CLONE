@@ -22,8 +22,10 @@ h1,h2,h3,h4{
 .text h1{
     font-weight: 1000;
     font-size: larger;
+    margin-bottom: 0%;
 }
 .text #secondtext{
+    margin-top: 0%;
     padding-bottom: 25px;
     font-weight: 600;
     font-size: 22px;
@@ -270,12 +272,78 @@ input[type="radio"]{
         border: white;
         border-color: white;
 }
-@media (max-width:576px) {
-    .en,.showcase,.img1,.img2,.img3,.img4{
-        padding: 0px;
-        margin: 0px;
-        width: fit-content;
-        display: flex;
-        flex-direction: column-reverse;
+@media (min-width: 319px) and (max-width: 480px) {
+
+    .showcase-top > img{
+        margin-left: 3%;
+        width: 90px;
+    }
+    .showcase-top > .langSelect{
+        width: 48px;
+    }
+    .showcase-top > .signin{
+        margin-right: 2.5rem;
+    }
+    .showcase .text{
+        font-size: 5px;
+        margin-left: 0%;
+    }
+    #firsttext{
+        font-size: 37px;
+        padding-left: 30px;
+        margin-bottom: 3px;
+        max-width: 75%;
+    }
+    #secondtext{
+        padding-right: 2px;
+        margin-bottom: 0px;
+        padding-left: 30px;
+        font-weight: lighter;
+    }
+    #thirdtext{
+        padding-left: 30px;
+        margin: 0%;
+        font-size: medium;
+        max-width: 85%;
+        font-weight: lighter;
+    }
+    .showcase .details{
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    .emailbar{
+        width: 250px;
+        height: 45px;
+    }
+    .getstarted{
+        margin-top: 18px;
+    }
+    .en{
+        margin-top: 80px;
+        margin-left: 20px;
+        width: 315px;
+    }
+    .details2{
+        margin-top: 100px;
+        margin-left: 0%;
+    }
+    .emailbar2{
+        width: 250px;
+    }
+    .getstarted{
+        margin-top: 10px;
+        height: 45px;
+    }
+    .en img{
+        width: 100%;
+        padding: 0%;
+    }
+    .en h2,h3{
+        font-size: 5px;
+        padding: 0%;
+    }
+    .questions{
+        margin-left: 5px;
+        width: 100%;
     }
 }
