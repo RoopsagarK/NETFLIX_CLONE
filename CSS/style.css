@@ -148,15 +148,15 @@ h1,h2,h3,h4{
     z-index: 2;
 }
 .en1{
+    display: flex;
     background: linear-gradient(to top left, #000235 , #010F42 , #E40913 );
     opacity: 0.9;
     padding: 2.75rem 0;
     border-radius: 10px;
 }
 .en1,.en2,.en3,.en4{
-    display: grid;
     position: relative;
-    grid-template-columns: 50% 50%;
+    display: flex;
     padding: 20px;
     z-index: 3;
 }
@@ -183,20 +183,16 @@ h1,h2,h3,h4{
     padding-right: 5.2rem;
 }
 .ln1,.ln2,.ln3{
-    width: 100;
     margin-left: 5.2rem;
     margin-right: 5.2rem;
     height: 8px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 .questions{
-    width: 80rem;
-    height: 40rem;
-    margin-left: 10rem;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin: 10rem;
 }
 .questions h2{
+    display: flex;
     position: relative;
     z-index: 3;
     font-size: 38px;
@@ -218,12 +214,13 @@ h1,h2,h3,h4{
 .accordian li label{
     display: flex;
     align-items: center;
+    color: white;
     height: 85px;
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    background:#070c27;
-    margin-bottom: 2px;
+    background:#132144;
+    margin-bottom: 10px;
     cursor: pointer;
     position: relative;
     z-index: 3;
@@ -239,8 +236,12 @@ input[type="radio"]{
     display: none;
 }
 .accordian .content{
-    background:#070c27;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background:#132144;
+    color: white;
     text-align: left;
+    font-size: 0%;
     padding: 0 20px;
     max-height: 0;
     transition: max-height 0.5s,padding 0.5s;
@@ -248,12 +249,12 @@ input[type="radio"]{
 }
 .accordian input[type="radio"]:checked + label + .content{
     max-height: 600px;
+    font-size: medium;
     padding: 30px 20px;
 }
 .accordian input[type="radio"]:checked + label::after{
     transform: rotate(135deg);
 }
-
 .finaltext{
     position: relative;
     z-index: 3;
@@ -271,6 +272,7 @@ input[type="radio"]{
         font-size: 1.2rem;
         border: white;
         border-color: white;
+        z-index: 4;
 }
 @media (min-width: 319px) and (max-width: 480px) {
 
@@ -319,7 +321,7 @@ input[type="radio"]{
         margin-top: 18px;
     }
     .en{
-        margin-top: 80px;
+        margin-top: 100px;
         margin-left: 20px;
         width: 315px;
     }
@@ -338,12 +340,33 @@ input[type="radio"]{
         width: 100%;
         padding: 0%;
     }
-    .en h2,h3{
-        font-size: 5px;
+    .en h2{
+        font-size: 26px;
         padding: 0%;
     }
-    .questions{
-        margin-left: 5px;
-        width: 100%;
+    .en h3{
+        padding: 0%;
+        font-weight: lighter;
+        font-size: 18px;
     }
+    .en1,.en2,.en3,.en4{
+        flex-direction: column;
+    }
+    .ln1,.ln2,.ln3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .en2,.en4{
+        flex-direction: column-reverse;
+    }
+   .questions{
+    margin: 2rem;
+   }
+   .questions h2{
+    font-size: 28px;
+   }
+   .accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
 }
