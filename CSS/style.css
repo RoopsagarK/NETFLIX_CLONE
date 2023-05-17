@@ -142,6 +142,8 @@ h1,h2,h3,h4{
     height: 16px;
 }
 .en{
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -327,9 +329,6 @@ input[type="radio"]{
         width: 250px;
         height: 45px;
     }
-   .emailbar2{
-    width: 250px;
-   }
     .getstarted{
         margin-top: 18px;
     }
@@ -339,7 +338,12 @@ input[type="radio"]{
         width: 315px;
     }
     .details2{
-       margin: 0%;
+       margin-left: 0%;
+       align-items: start;
+       padding-left: 20px;
+    }
+    .details2 > .emailbar2{
+        width: 18rem;
     }
     .finaltext{
         margin-left: 20px;
