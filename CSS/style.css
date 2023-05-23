@@ -7,11 +7,13 @@
 html{
     height: 100%;
     width: 100%;
+    margin: 0%;
 }
 body{
     font-family: Helvetica ,sans-serif;
     height: 100%;
     width: 100%;
+    margin: 0%; 
     position: relative;
     background-color: #00071f;
     color: #999;
@@ -332,13 +334,8 @@ input[type="radio"]{
     .getstarted{
         margin-top: 18px;
     }
-    .en{
-        margin-top: 100px;
-        margin-left: 20px;
-        width: 315px;
-    }
     .details2{
-       margin-left: 0%;
+       margin-left: 5%;
        align-items: start;
        padding-left: 20px;
     }
